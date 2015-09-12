@@ -1,0 +1,23 @@
+{
+  "name": "fx-wavelet",
+  "version": "0.0.1",
+  "main": "./index.js",
+  "engines": {
+    "node": "0.12.*"
+  },
+  "dependencies": {
+  },
+  "plugin": {
+    "consumes": [
+      "logger",
+      "express",
+      "webapp",
+      "server",
+      "middlewares",
+      "red"
+    ],
+    "provides": [
+      "waveletApp"
+    ]
+  }
+}

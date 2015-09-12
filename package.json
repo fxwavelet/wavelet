@@ -1,0 +1,17 @@
+{
+  "name": "wavelet",
+  "version": "0.1.0",
+  "main": "./wavelet.js",
+  "bin": {
+    "wavelet": "./bin/wavelet"
+  },
+  "engines": {
+    "node": "0.12.*"
+  },
+  "dependencies": {
+    "minimist": "1.1.x",
+    "hogan": "1.0.x",
+    "fx-runtime": "0.1.x",
+    "async": "1.2.x"
+  }
+}
