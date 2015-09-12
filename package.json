@@ -1,6 +1,17 @@
 {
   "name": "wavelet",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "description": "Service Oriented nodejs application with a visual tool.",
+  "keywords": ["wavelet", "plugin", "service", "service oriented"],
+  "homepage": "https://github.com/fxwavelet/wavelet",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fxwavelet/wavelet"
+  },
+  "bugs": {
+    "url": "https://github.com/fxwavelet/wavelet/issues",
+    "email": "daily.bhou@gmail.com"
+  },
   "main": "./wavelet.js",
   "bin": {
     "wavelet": "./bin/wavelet"
