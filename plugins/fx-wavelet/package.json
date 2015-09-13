@@ -13,8 +13,7 @@
       "express",
       "webapp",
       "server",
-      "middlewares",
-      "red"
+      "middlewares"
     ],
     "provides": [
       "waveletApp"
