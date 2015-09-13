@@ -1,6 +1,6 @@
 {
   "name": "wavelet",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Service Oriented nodejs application with a visual tool.",
   "keywords": ["wavelet", "plugin", "service", "service oriented"],
   "homepage": "https://github.com/fxwavelet/wavelet",

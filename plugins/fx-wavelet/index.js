@@ -25,7 +25,7 @@ module.exports = function (options, imports, register) {
 
   var port = argv.port || 8080;
   server.listen(port, function (err) {
-    if (!argv.disableEditor || !argv.disableRED) {
+    if (!argv.disableEditor && !argv.disableRED) {
       RED.start();
     }
 
