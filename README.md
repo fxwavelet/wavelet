@@ -2,7 +2,7 @@
 
 Internal name: fx-wavelet
 
-Service Oriented nodejs application with a visual tool.
+Service Oriented nodejs application
 
 ## Installation
 ``````` sh
