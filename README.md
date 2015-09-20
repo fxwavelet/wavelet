@@ -23,8 +23,6 @@ start [app] [options]   start an application
    --config: the wavelet configuration file, by default {your app}/app.js
    --root: the web app root
    --port: the web app port
-   --disableEditor: disable the application visual editor
-   --disableRED: (alias of disableEditor) disable the application visual editor
    
    Some plugins accept the options from command line, check your plugin manual to see which options you can put here.
 

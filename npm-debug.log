@@ -1,0 +1,108 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Installations\\nodejs\\node.exe',
+1 verbose cli   'C:\\Installations\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.38
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . C:\Users\IBM_ADMIN\AppData\Roaming\npm-cache\3a52ce78-.lock
+10 verbose tar pack [ 'C:\\Users\\IBM_ADMIN\\AppData\\Roaming\\npm-cache\\wavelet\\0.1.3\\package.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball C:\Users\IBM_ADMIN\AppData\Roaming\npm-cache\wavelet\0.1.3\package.tgz
+12 verbose folder .
+13 info prepublish wavelet@0.1.3
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. C:\Users\IBM_ADMIN\AppData\Roaming\npm-cache\1f1177db-tar.lock
+16 silly lockFile 2261f828--cache-wavelet-0-1-3-package-tgz tar://C:\Users\IBM_ADMIN\AppData\Roaming\npm-cache\wavelet\0.1.3\package.tgz
+17 verbose lock tar://C:\Users\IBM_ADMIN\AppData\Roaming\npm-cache\wavelet\0.1.3\package.tgz C:\Users\IBM_ADMIN\AppData\Roaming\npm-cache\2261f828--cache-wavelet-0-1-3-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 2261f828--cache-wavelet-0-1-3-package-tgz tar://C:\Users\IBM_ADMIN\AppData\Roaming\npm-cache\wavelet\0.1.3\package.tgz
+21 silly lockFile 2261f828--cache-wavelet-0-1-3-package-tgz tar://C:\Users\IBM_ADMIN\AppData\Roaming\npm-cache\wavelet\0.1.3\package.tgz
+22 silly lockFile 4fbbd7d0--npm-cache-wavelet-0-1-3-package C:\Users\IBM_ADMIN\AppData\Roaming\npm-cache\wavelet\0.1.3\package
+23 verbose lock C:\Users\IBM_ADMIN\AppData\Roaming\npm-cache\wavelet\0.1.3\package C:\Users\IBM_ADMIN\AppData\Roaming\npm-cache\4fbbd7d0--npm-cache-wavelet-0-1-3-package.lock
+24 silly lockFile 4fbbd7d0--npm-cache-wavelet-0-1-3-package C:\Users\IBM_ADMIN\AppData\Roaming\npm-cache\wavelet\0.1.3\package
+25 silly lockFile 4fbbd7d0--npm-cache-wavelet-0-1-3-package C:\Users\IBM_ADMIN\AppData\Roaming\npm-cache\wavelet\0.1.3\package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'wavelet',
+28 silly publish   version: '0.1.3',
+28 silly publish   description: 'Service Oriented nodejs application with a visual tool.',
+28 silly publish   keywords: [ 'wavelet', 'plugin', 'service', 'service oriented' ],
+28 silly publish   homepage: 'https://github.com/fxwavelet/wavelet',
+28 silly publish   repository: { type: 'git', url: 'https://github.com/fxwavelet/wavelet' },
+28 silly publish   bugs:
+28 silly publish    { url: 'https://github.com/fxwavelet/wavelet/issues',
+28 silly publish      email: 'daily.bhou@gmail.com' },
+28 silly publish   main: './wavelet.js',
+28 silly publish   bin: { wavelet: './bin/wavelet' },
+28 silly publish   engines: { node: '0.12.*' },
+28 silly publish   dependencies:
+28 silly publish    { minimist: '1.1.x',
+28 silly publish      hogan: '1.0.x',
+28 silly publish      'fx-runtime': '0.1.x',
+28 silly publish      async: '1.2.x' },
+28 silly publish   gitHead: '6d56f763509592c214739450c913d474a772b908',
+28 silly publish   readme: '# Wavelet\r\n\r\nInternal name: fx-wavelet\r\n\r\nService Oriented nodejs application\r\n\r\n## Installation\r\n``````` sh\r\nnpm install -g wavelet\r\n```````\r\n\r\n## Usage\r\n\r\n````` sh\r\nUsage: wavelet [action] [options]\r\n\r\nAction:\r\n\r\nstart [app] [options]   start an application\r\n app: application path, by default: current working directory\r\n \r\n options:\r\n   --config: the wavelet configuration file, by default {your app}/app.js\r\n   --root: the web app root\r\n   --port: the web app port\r\n   \r\n   Some plugins accept the options from command line, check your plugin manual to see which options you can put here.\r\n\r\ncreate [app] [options]    create a wavelet project\r\n  app: the name of the application\r\n  options:\r\n    -g: use global repository\r\n\r\ninstall [plugin name] [version] [options]   install plugin or wavelet\r\n  plugin name: optional, the plugin or wavlet to install, if not specified it will look for all the plugins defined in the wavelet.json file\r\n\r\n  version: optional, the version of plugin or wavelet to install, if not \r\n  specified the latest version will be installed\r\n  \r\n  options:\r\n    -g install the plugin to global repository otherwise install it locally\r\n\r\ninstall red <node-red-name> [version]   install node-red node\r\n  node-red-name  is the name of Node-RED node module\r\n    Example: wavelet install red node-red-node-instagram\r\n  \r\n  More node-red nodes see [Node-Red Library](http://flows.nodered.org/)\r\n\r\nget repo   get repository location\r\n\r\nset repo [location]  set repository location\r\n\r\nRuntime options:\r\n-v print wavelet version\r\n-d debug, toggle debug\r\n-h help\r\n`````\r\n\r\nExample of Usage:\r\nStart wavelet application located at current directory: your_app_folder\r\n`````sh\r\ncd your_app_folder\r\nwavelet start\r\n`````\r\n\r\nStart wavelet application by specifying your app location\r\n`````sh\r\nwavelet start your_app_folder\r\n`````\r\n\r\nCreate a wavelet application: testApp\r\n`````sh\r\nwavelet create testApp\r\n`````\r\n\r\nInstall all the plugins/dependences on application folder\r\n`````sh\r\ncd your_app_folder\r\nwavelet install\r\n`````\r\n\r\nCheck wavelet version\r\n`````sh\r\nwavelet -v\r\n`````\r\n\r\n## global variable registered\r\n**Wavelet** inherits the gloabl variables defined in fx-runtime. Besides, it registers the following global variables:\r\n\r\n#### _waveletVersion\r\nthe current wavelet version\r\n\r\n#### _root\r\nthe web app root. All your web routes registered in your plugin must have a prefix of **_root**\r\n\r\nFor example\r\n``````javascript\r\nwebapp.use(_root + \'/register\', function(req, res) {\r\n});\r\n\r\nwebapp.post(_root + \'/login\', function(req, res) {\r\n});\r\n``````\r\n\r\nIt could be configured in config file or through command line argument --root\r\n\r\n\r\n## Format of config file\r\nWavelet config file could be a json or a js file, or any nodejs requirable files.\r\nConfig file must return a json object with following fields:\r\n\r\n- apps: [optional] the list of application plugin\r\n- home: the home path of your application, usually __dirname\r\n- root: the root web path, default: \'\'\r\n- binding: [optional] service implementation binding, if you have multiple implementation of same service, use this binding to choose the one you want to use\r\n- pluginSearchPaths: a list of paths to locate your plugins\r\n- defaultPluginConfig: default plugin configs. [JSON object], key is the plugin name, value is the config object\r\n- whiteList: [optional] the white list of plugin\r\n- blackList: [optional] the black list of plugin\r\n\r\nExample:\r\n````` javascript\r\nmodule.exports = {\r\n  "home": __dirname,\r\n  "pluginSearchPaths": [\r\n    __dirname + \'/plugins\',\r\n    __dirname + \'/../../fx-plugins\'\r\n  ],\r\n  "defaultPluginConfig": {\r\n    "fx-mongodb": {\r\n\r\n    }\r\n  }\r\n};\r\n`````\r\n\r\n\r\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   _id: 'wavelet@0.1.3',
+28 silly publish   scripts: {},
+28 silly publish   _shasum: '1a30c238fa07ae7209c2ba2cf1ee96b31066f385',
+28 silly publish   _from: '.' }
+29 verbose request where is /wavelet
+30 verbose request registry http://registry.npmjs.org/
+31 verbose request id f91dd7762dbadd53
+32 verbose url raw /wavelet
+33 verbose url resolving [ 'http://registry.npmjs.org/', './wavelet' ]
+34 verbose url resolved http://registry.npmjs.org/wavelet
+35 verbose request where is http://registry.npmjs.org/wavelet
+36 info trying registry request attempt 1 at 12:30:36
+37 http PUT http://registry.npmjs.org/wavelet
+38 http 403 http://registry.npmjs.org/wavelet
+39 verbose headers { 'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=60',
+39 verbose headers   'content-length': '95',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Sun, 20 Sep 2015 10:30:45 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-lcy1128-LCY',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1442745043.431317,VS0,VE1602' }
+40 error publish Failed PUT 403
+41 error Error: "You cannot publish over the previously published version 0.1.3." : wavelet
+41 error     at RegClient.<anonymous> (C:\Installations\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:308:14)
+41 error     at Request._callback (C:\Installations\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:246:65)
+41 error     at Request.self.callback (C:\Installations\nodejs\node_modules\npm\node_modules\request\request.js:236:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (C:\Installations\nodejs\node_modules\npm\node_modules\request\request.js:1142:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (C:\Installations\nodejs\node_modules\npm\node_modules\request\request.js:1096:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:944:16
+41 error     at process._tickCallback (node.js:448:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Windows_NT 6.1.7601
+44 error command "C:\\Installations\\nodejs\\node.exe" "C:\\Installations\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+45 error cwd C:\_Personal\GitHub\wavelet\wavelet
+46 error node -v v0.10.38
+47 error npm -v 1.4.28
+48 verbose exit [ 1, true ]

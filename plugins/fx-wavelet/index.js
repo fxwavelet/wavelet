@@ -7,7 +7,6 @@ module.exports = function (options, imports, register) {
   var webapp = imports.webapp;
   var server = imports.server;
   var middlewares = imports.middlewares.all(middlewareList);
-  //var RED = imports.red;
 
 
   var argv = options.argv;
@@ -25,10 +24,6 @@ module.exports = function (options, imports, register) {
 
   var port = argv.port || 8080;
   server.listen(port, function (err) {
-    // if (!argv.disableEditor && !argv.disableRED) {
-    //   RED.start();
-    // }
-
     logger.info('Wavelet app is running at port ' + port);
   });
 
